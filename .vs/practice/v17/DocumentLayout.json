@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\6semester\\practice\\practice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\models\\showing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\models\\showing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\models\\movie_genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\models\\movie_genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\models\\hall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\models\\hall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|e:\\6semester\\practice\\practice\\practice\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9970ACC4-59A2-4E8F-BF63-865BC5E014E0}|practice\\practice.csproj|solutionrelative:practice\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Movie_Genre.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Models\\Movie_Genre.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\Movie_Genre.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Models\\Movie_Genre.cs",
+              "RelativeToolTip": "practice\\Models\\Movie_Genre.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T23:52:11.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Genre.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Models\\Genre.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\Genre.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Models\\Genre.cs",
+              "RelativeToolTip": "practice\\Models\\Genre.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T23:49:26.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Showing.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Models\\Showing.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\Showing.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Models\\Showing.cs",
+              "RelativeToolTip": "practice\\Models\\Showing.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T23:43:56.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\Movie.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Models\\Movie.cs",
+              "RelativeToolTip": "practice\\Models\\Movie.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA9wBMAAACQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T23:27:09.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Hall.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Models\\Hall.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\Hall.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Models\\Hall.cs",
+              "RelativeToolTip": "practice\\Models\\Hall.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T22:27:20.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Models\\Schedule.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\Schedule.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Models\\Schedule.cs",
+              "RelativeToolTip": "practice\\Models\\Schedule.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T22:20:48.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Context.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Models\\Context.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\Context.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Models\\Context.cs",
+              "RelativeToolTip": "practice\\Models\\Context.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA5wCIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T21:46:41.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\Ticket.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Models\\Ticket.cs",
+              "RelativeToolTip": "practice\\Models\\Ticket.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAwwCoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T21:40:26.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "practice\\Controllers\\TicketsController.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "practice\\Controllers\\TicketsController.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAUwIAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T21:37:23.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "practice\\PasswordHasher.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\PasswordHasher.cs",
+              "RelativeToolTip": "practice\\PasswordHasher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T13:40:01.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "practice\\Controllers\\ClientsController.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "practice\\Controllers\\ClientsController.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAgwG4AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T21:46:17.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\appsettings.json",
+              "RelativeDocumentMoniker": "practice\\appsettings.json",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\appsettings.json",
+              "RelativeToolTip": "practice\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-16T21:25:39.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Client.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\Client.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Models\\Client.cs",
+              "RelativeToolTip": "practice\\Models\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T21:17:02.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\6semester\\practice\\practice\\practice\\Program.cs",
+              "RelativeDocumentMoniker": "practice\\Program.cs",
+              "ToolTip": "E:\\6semester\\practice\\practice\\practice\\Program.cs",
+              "RelativeToolTip": "practice\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T21:12:39.8Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
