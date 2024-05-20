@@ -16,6 +16,7 @@ namespace practice.Models
         public DbSet<Movie> Movie { get; set; }
         public DbSet<Showing> Showings { get; set; }
         public DbSet<Genre> Genres { get; set; }
+        public DbSet<Movie_Genre> Movie_Genres { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -33,6 +34,8 @@ namespace practice.Models
                 .HasKey(s => s.showing_id);
             modelBuilder.Entity<Genre>()
                 .HasKey(g => g.genre_id);
+            modelBuilder.Entity<Movie_Genre>()
+                .HasNoKey();
         }
     }
 
