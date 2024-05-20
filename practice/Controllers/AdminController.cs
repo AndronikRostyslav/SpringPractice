@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using practice.Models;
@@ -429,5 +429,100 @@ namespace practice.Controllers
             return NoContent();
         }
 
+        // Додано: Редагування інформації про фільм
+        [HttpPut("UpdateMovie/{id}")]
+        public async Task<IActionResult> UpdateMovie(int id, [FromBody] Movie updatedMovie)
+        {
+            var accessRights = HttpContext.Session.GetString("AccessRights");
+            if (accessRights == null) return Unauthorized("User is not logged in.");
+            if (accessRights == "False") return Conflict("User does not have access rights.");
+
+            var existingMovie = await _context.Movie.FindAsync(id);
+            if (existingMovie == null) return NotFound();
+
+            existingMovie.title = updatedMovie.title;
+            existingMovie.budget = updatedMovie.budget;
+            existingMovie.description = updatedMovie.description;
+            existingMovie.release_date = updatedMovie.release_date;
+            existingMovie.box_office = updatedMovie.box_office;
+            existingMovie.duration = updatedMovie.duration;
+            existingMovie.tagline = updatedMovie.tagline;
+            existingMovie.average_rating = updatedMovie.average_rating;
+
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
+        // Додано: Редагування розкладу сеансів
+        [HttpPut("UpdateSchedule/{id}")]
+        public async Task<IActionResult> UpdateSchedule(int id, [FromBody] Schedule updatedSchedule)
+        {
+            var accessRights = HttpContext.Session.GetString("AccessRights");
+            if (accessRights == null) return Unauthorized("User is not logged in.");
+            if (accessRights == "False") return Conflict("User does not have access rights.");
+
+            var existingSchedule = await _context.Schedule.FindAsync(id);
+            if (existingSchedule == null) return NotFound();
+
+            existingSchedule.hall_id = updatedSchedule.hall_id;
+            existingSchedule.showing_id = updatedSchedule.showing_id;
+            existingSchedule.movie_id = updatedSchedule.movie_id;
+            existingSchedule.show_date = updatedSchedule.show_date;
+            existingSchedule.price = updatedSchedule.price;
+
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
+        // Додано: Отримання статистики продажів
+        /// <summary>
+        /// Retrieves sales statistics including key metrics such as the number of tickets sold and total revenue.
+        /// </summary>
+        /// <returns>
+        /// Returns the sales statistics including the total number of tickets sold and total revenue.
+        /// If the user is not logged in, returns Unauthorized.
+        /// If the user does not have access rights, returns Conflict.
+        /// </returns>
+        [HttpGet("SalesStatistics")]
+        public async Task<ActionResult<SalesStatistics>> GetSalesStatistics()
+        {
+            // Retrieve the user's access rights from the session
+            var accessRights = HttpContext.Session.GetString("AccessRights");
+
+            // Check if the user is logged in
+            if (accessRights == null)
+            {
+                return Unauthorized("User is not logged in.");
+            }
+
+            // Check if the user has access rights
+            if (accessRights == "False")
+            {
+                return Conflict("User does not have access rights.");
+            }
+
+            // Calculate total number of tickets sold
+            var totalTicketsSold = await _context.Tickets.CountAsync();
+
+            // Calculate total revenue
+            var totalRevenue = await _context.Tickets
+                .Join(_context.Schedule, ticket => ticket.schedule_id, schedule => schedule.schedule_id,
+                    (ticket, schedule) => new { ticket, schedule.price })
+                .SumAsync(t => t.price);
+
+            // Return the sales statistics
+            return new SalesStatistics
+            {
+                TotalTicketsSold = totalTicketsSold,
+                TotalRevenue = totalRevenue
+            };
+        }
+    }
+
+    // Модель для повернення статистики продажів
+    public class SalesStatistics
+    {
+        public int TotalTicketsSold { get; set; }
+        public decimal TotalRevenue { get; set; }
     }
 }
