@@ -1,4 +1,4 @@
-    using Microsoft.AspNetCore.Http;
+       using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
     using practice.Models;
@@ -533,6 +533,45 @@
             return NoContent();
         }
 
+        /// <summary>
+        /// Updates a user by ID.
+        /// </summary>
+        /// <param name="id">The ID of the user to update.</param>
+        /// <param name="updatedUser">The updated user information.</param>
+        /// <returns>
+        /// Returns NoContent if the update is successful. Returns Unauthorized if the user is not logged in, Conflict if the user does not have access rights, and NotFound if the user is not found.
+        /// </returns>
+        [HttpPut("UpdateUser/{id}")]
+        public async Task<IActionResult> UpdateUser(int id, [FromBody] Client updatedUser)
+        {
+            var access_rights = HttpContext.Session.GetString("AccessRights");
+
+            if (access_rights == null)
+            {
+                return Unauthorized("User is not logged in.");
+            }
+
+            if (access_rights == "False")
+            {
+                return Conflict("User does not have access rights.");
+            }
+
+            var existingUser = await _context.Clients.FindAsync(id);
+            if (existingUser == null)
+            {
+                return NotFound();
+            }
+
+            existingUser.first_name = updatedUser.first_name;
+            existingUser.last_name = updatedUser.last_name;
+            existingUser.login = updatedUser.login;
+            existingUser.password = PasswordHasher.HashPassword(updatedUser.password);
+            existingUser.access_rights = updatedUser.access_rights;
+
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
 
         // Додатковий метод для перегляду розширеної статистики продажів
         /// <summary>
@@ -601,4 +640,5 @@
             public int TotalClients { get; set; }
         }
     }
+
 
