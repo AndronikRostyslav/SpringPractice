@@ -474,17 +474,17 @@ namespace practice.Controllers
             return NoContent();
         }
 
-        // Додано: Отримання статистики продажів
+        // Додатковий метод для перегляду розширеної статистики продажів
         /// <summary>
-        /// Retrieves sales statistics including key metrics such as the number of tickets sold and total revenue.
+        /// Retrieves extended sales statistics including key metrics such as the number of tickets sold, total revenue, average revenue per movie, and total movies.
         /// </summary>
         /// <returns>
-        /// Returns the sales statistics including the total number of tickets sold and total revenue.
+        /// Returns the extended sales statistics including various key metrics.
         /// If the user is not logged in, returns Unauthorized.
         /// If the user does not have access rights, returns Conflict.
         /// </returns>
-        [HttpGet("SalesStatistics")]
-        public async Task<ActionResult<SalesStatistics>> GetSalesStatistics()
+        [HttpGet("ExtendedSalesStatistics")]
+        public async Task<ActionResult<ExtendedSalesStatistics>> GetExtendedSalesStatistics()
         {
             // Retrieve the user's access rights from the session
             var accessRights = HttpContext.Session.GetString("AccessRights");
@@ -510,19 +510,34 @@ namespace practice.Controllers
                     (ticket, schedule) => new { ticket, schedule.price })
                 .SumAsync(t => t.price);
 
-            // Return the sales statistics
-            return new SalesStatistics
+            // Calculate total number of movies
+            var totalMovies = await _context.Movie.CountAsync();
+
+            // Calculate average revenue per movie
+            var averageRevenuePerMovie = totalMovies > 0 ? totalRevenue / totalMovies : 0;
+
+            // Calculate total number of clients
+            var totalClients = await _context.Clients.CountAsync();
+
+            // Return the extended sales statistics
+            return new ExtendedSalesStatistics
             {
                 TotalTicketsSold = totalTicketsSold,
-                TotalRevenue = totalRevenue
+                TotalRevenue = totalRevenue,
+                AverageRevenuePerMovie = averageRevenuePerMovie,
+                TotalMovies = totalMovies,
+                TotalClients = totalClients
             };
         }
     }
 
-    // Модель для повернення статистики продажів
-    public class SalesStatistics
+    // Модель для повернення розширеної статистики продажів
+    public class ExtendedSalesStatistics
     {
         public int TotalTicketsSold { get; set; }
         public decimal TotalRevenue { get; set; }
+        public decimal AverageRevenuePerMovie { get; set; }
+        public int TotalMovies { get; set; }
+        public int TotalClients { get; set; }
     }
 }
